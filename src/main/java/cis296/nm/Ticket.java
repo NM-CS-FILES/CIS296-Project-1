@@ -50,7 +50,7 @@ public class Ticket {
         Ticket ticket = new Ticket();
 
         for (int i = 0; i != WHITE_COUNT; i++ ) {
-            int value = 0;
+            int value;
 
             do {
                 value = RANDOM.nextInt(WHITE_MIN, WHITE_MAX + 1);
@@ -140,4 +140,4 @@ public class Ticket {
 
         return true;
     }
-};
+}

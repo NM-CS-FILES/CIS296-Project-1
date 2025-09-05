@@ -39,7 +39,7 @@ public class Main {
 
     public static void multi() {
         Ticket winner = Ticket.random();
-        int amount = -1;
+        int amount;
 
         while (true) {
             System.out.print("How Many Tickets: ");
