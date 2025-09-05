@@ -42,18 +42,18 @@ class TicketTest {
         Ticket output = new Ticket();
 
         assertAll(
-                () -> assertEquals(false, Ticket.tryParse(null, null)),
-                () -> assertEquals(false, Ticket.tryParse("", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 2 3 5 5 6", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 2 3 4 5", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 2 3 4 5 6 7 8", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 two 3 4 5 6", output)),
-                () -> assertEquals(false, Ticket.tryParse("0 2 3 4 5 6", output)),
-                () -> assertEquals(false, Ticket.tryParse("70 2 3 4 5 6", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 2 3 -4 5 6", output)),
-                () -> assertEquals(false, Ticket.tryParse("1 2 3 4 5 27", output)),
-                () -> assertEquals(true, Ticket.tryParse("1 2 3 4 5 6", output)),
-                () -> assertEquals(true, Ticket.tryParse("1  2  3  4    5   6", output))
+                () -> assertFalse(Ticket.tryParse(null, null)),
+                () -> assertFalse(Ticket.tryParse("", output)),
+                () -> assertFalse(Ticket.tryParse("1 2 3 5 5 6", output)),
+                () -> assertFalse(Ticket.tryParse("1 2 3 4 5", output)),
+                () -> assertFalse(Ticket.tryParse("1 2 3 4 5 6 7 8", output)),
+                () -> assertFalse(Ticket.tryParse("1 two 3 4 5 6", output)),
+                () -> assertFalse(Ticket.tryParse("0 2 3 4 5 6", output)),
+                () -> assertFalse(Ticket.tryParse("70 2 3 4 5 6", output)),
+                () -> assertFalse(Ticket.tryParse("1 2 3 -4 5 6", output)),
+                () -> assertFalse(Ticket.tryParse("1 2 3 4 5 27", output)),
+                () -> assertTrue(Ticket.tryParse("1 2 3 4 5 6", output)),
+                () -> assertTrue(Ticket.tryParse("1  2  3  4    5   6", output))
         );
     }
 }
