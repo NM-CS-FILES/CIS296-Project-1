@@ -8,8 +8,8 @@
 
 ![5](https://github.com/user-attachments/assets/9a30312d-b3ca-4f53-acbf-9ace4c53a335)
 
-Self Assessment:
-5/5 | Allows users to have self pick tickets and validates
-5/5 | Allows users to X number of random tickets
-5/5 | Keeps looping and grand totals spent, won, lost
-5/5 | Tests all the code ( aside from user input code ) - MUST test winnings
+Self Assessment:<br>
+5/5 | Allows users to have self pick tickets and validates<br>
+5/5 | Allows users to X number of random tickets<br>
+5/5 | Keeps looping and grand totals spent, won, lost<br>
+5/5 | Tests all the code ( aside from user input code ) - MUST test winnings<br>
